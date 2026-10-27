@@ -1,0 +1,53 @@
+{
+  "name": "dsh-dota2bp",
+  "version": "1.1.0",
+  "private": false,
+  "description": "Dota 2 天梯无 Ban 2-2-1 征召助手：分段/职业数据选择、灵活分路成员池、BP 预测胜率与中文英雄名。",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "dota2",
+    "dota",
+    "ban-pick",
+    "draft",
+    "captains-mode"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "service.js",
+    "recommender.js",
+    "sources.js",
+    "aliases.js",
+    "client.js",
+    "seed.json",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "MARKET.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-rc.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

@@ -1,0 +1,4 @@
+- insert:
+    - id: dota2bp
+      name: "dsh-dota2bp"
+      config: {}
